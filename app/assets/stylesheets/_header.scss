@@ -1,0 +1,60 @@
+// .header
+//       .header__bar
+//         .header__bar__title
+//         .header__bar__post
+
+
+@mixin header--btn() {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color:#3AD6B2;
+  border: solid 2px #3AD6B2;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+@mixin header--btn__hover() {
+  background:#3AD6B2;
+  color: white;
+}
+
+.header{
+  padding: 10px;
+  border-bottom: 1px solid #D8D8D8;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 62px;
+  &__bar{
+    width: 100%;
+    padding: 0 100px;
+    margin: 0 auto;
+    display: flex;
+    &__title{
+    }
+    &--btn{
+      &__login{
+        @include header--btn();
+        &:hover{
+          @include header--btn__hover();
+        }
+      }
+      &__signin{
+        @include header--btn();
+        &:hover{
+          @include header--btn__hover();
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
