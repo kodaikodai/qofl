@@ -1,0 +1,21 @@
+.main{
+  background: #E5F8F3;
+  height: 3000px;
+  padding-top: 83px;
+  .upper{
+    height: 400px;
+    background: white;
+  }
+  .lower{
+    padding:50px 0;
+    display: flex;
+    justify-content: space-around;
+    .contents{
+      margin: 30px;
+      background: white;
+      height: 400px;
+      width: 400px;
+    }
+
+  }
+}
