@@ -1,12 +1,6 @@
 .main
   .upper
-
   .lower
-    .contents
-      aaa
-    .contents
-      aaa
-    .contents
-      aaa
-    .contents
-      aaa
+    - @posts.reverse.each do |post|
+      .contents
+        = image_tag post.image, alt:"写真", class:"contents__image"

@@ -8,14 +8,20 @@
   }
   .lower{
     padding:50px 0;
-    display: flex;
-    justify-content: space-around;
     .contents{
+      float: left;
       margin: 30px;
       background: white;
-      height: 400px;
-      width: 400px;
+      height: 286px;
+      width: 286px;
+      box-shadow: 0 0 10px rgba(41,41,41,0.2);
+      &__image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
-
   }
 }
+
+
