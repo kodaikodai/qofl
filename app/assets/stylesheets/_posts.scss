@@ -9,19 +9,37 @@
   .lower{
     padding:50px 0;
     .contents{
+      text-decoration: none;
       float: left;
       margin: 30px;
-      background: white;
       height: 286px;
       width: 286px;
-      box-shadow: 0 0 10px rgba(41,41,41,0.2);
+      // background-image: -moz-linear-gradient(top, transparent 0%, transparent 62%, rgba(0,0,0,0.85) 100%);
+      // background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(62%, transparent), color-stop(100%, rgba(0,0,0,0.85)));
+      // background-image: -webkit-linear-gradient(top, transparent 0%, transparent 62%, rgba(0,0,0,0.85) 100%);
+      // background-image: linear-gradient(to bottom, transparent 0%, transparent 62%, rgba(0,0,0,0.85) 100%);
+      // border-radius: 3px;
       &__image{
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(41,41,41,0.2);
       }
+      &__info{
+        display: flex;
+        justify-content: space-around;
+        &__title{
+          text-shadow: 3px 3px 1px #999999;
+        }
+        &__name{
+          text-shadow: 3px 3px 1px #999999;
+        }
+      }
+      
     }
   }
 }
+
 
 

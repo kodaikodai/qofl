@@ -2,5 +2,11 @@
   .upper
   .lower
     - @posts.reverse.each do |post|
-      .contents
+      =link_to "", class: "contents" do
         = image_tag post.image, alt:"写真", class:"contents__image"
+        .contents__info
+          %apan.contents__info__title
+            =post.title
+          %apan.contents__info__name
+            = icon('fas', 'user',  class: "")
+            aaa
