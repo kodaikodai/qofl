@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  height: calc(100vh - 182px);
+  background:rgb(236, 250, 247);
+  &__text{
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #666;
+    letter-spacing: 0.15em;
+    padding: 50px;
+  }
+  &--btn{
+    @include header--btn();
+    &:hover{
+      @include header--btn__hover();
+    }
+  }
+}

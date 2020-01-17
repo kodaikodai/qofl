@@ -1,0 +1,38 @@
+.container {
+  height: calc(100vh - 182px);
+  background:rgb(236, 250, 247);
+  .form {
+    background-color:rgb(236, 250, 247);
+    width: 660px;
+    height: 100%;
+    margin: 0 auto;
+    &__h3{
+    margin: 0 0 20px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #666;
+    letter-spacing: 0.15em;
+    }
+    &__input{
+      width: 100%;
+      margin: 5px 0 15px;
+      padding: 10px 0;
+      border: 1px solid #D8D8D8;
+      border-radius: 5px;
+      font-family: "游ゴシック", "YuGothic";
+    }
+    &__btn{
+    background-color: #3AD6B2;
+    border-radius: 20px;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    transition: .4s;
+    &:hover {
+      background:#B4F1E2;
+      color: white;
+    }
+    }
+  }
+}
