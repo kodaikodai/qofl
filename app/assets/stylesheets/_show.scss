@@ -1,4 +1,26 @@
-.container {
-  height: calc(100vh - 182px);
-  background:rgb(236, 250, 247);
+.maincontents{
+  padding-top: 20px;
+  background: #ecfaf7;;
+  width: 660px;
+  height: 100%;
+  margin: 0 auto;
+  &__image{
+    position: relative;
+    background-color:wheat;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+  }
+  &__post{
+    margin: 20px 0;
+    padding:10px 30px 10px;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+    background-color: white;
+    box-sizing: border-box;
+    &__name{
+      text-align: left;
+    }
+  }
 }
