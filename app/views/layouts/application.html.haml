@@ -14,8 +14,15 @@
           .header__bar__title
             =link_to 'title', root_path, class: ""
           .header--btn
-            .header__bar--btn__login  ログイン
-            .header__bar--btn__signin  新規登録
+            - if user_signed_in?
+              .grid-6
+                = link_to "ログアウト"
+                -# method: :delete
+                = link_to  "投稿する","", class: "header__bar--btn__login"
+            - else
+              .grid-6
+                = link_to "ログイン","", class: 'header__bar--btn__login'
+                = link_to "新規登録","", class: 'header__bar--btn__signin'
       = yield
       .footer
         フッター
