@@ -1,0 +1,27 @@
+.container
+  .maincontents
+    = image_tag @post.image, alt:"写真", class:"maincontents__image"
+    .maincontents__post
+      .maincontents__post__info
+        .maincontents__post__info__name
+          testname さんの投稿
+        .maincontents__post__info__time
+          2019.11.11
+      .maincontents__post__tiele
+        = "タイトル：#{@post.title}"
+      .maincontents__post__text
+        = simple_format(@post.text)
+
+
+
+      -# 以下はコメント機能-------
+      .maincontents__post__form
+        = form_with(model: @post, local: true) do |form|
+          = form.text_area :text, placeholder: "説明" , rows: "10", class: "form__input"
+          = form.submit "SEND", class: "form__btn form__input"
+      .maincontents__post__comment
+    .maincontents__btn
+      .maincontents__btn__edit
+        =link_to '編集する', edit_post_path, class: ""
+      .maincontents__btn__delete
+        =link_to '削除する', post_path, method: :delete, class: ""

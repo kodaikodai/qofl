@@ -8,12 +8,14 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    .header
-      .header__bar
-        .header__bar__title
-        .header--btn
-          .header__bar--btn__login  ログイン
-          .header__bar--btn__signin  新規登録
-    = yield
-    .footer
-      フッター
+    .wrapper
+      .header
+        .header__bar
+          .header__bar__title
+            =link_to 'title', root_path, class: ""
+          .header--btn
+            .header__bar--btn__login  ログイン
+            .header__bar--btn__signin  新規登録
+      = yield
+      .footer
+        フッター

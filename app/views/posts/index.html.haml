@@ -2,7 +2,7 @@
   .upper
   .lower
     - @posts.reverse.each do |post|
-      =link_to "", class: "contents" do
+      =link_to post_path(post.id), class: "contents" do
         = image_tag post.image, alt:"写真", class:"contents__image"
         .contents__info
           %apan.contents__info__title
