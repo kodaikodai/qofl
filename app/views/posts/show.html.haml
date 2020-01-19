@@ -22,6 +22,6 @@
       .maincontents__post__comment
     .maincontents__btn
       .maincontents__btn__edit
-        =link_to '編集する',edit_post_path, class: ""
+        =link_to '編集する', edit_post_path, class: ""
       .maincontents__btn__delete
-        削除する
+        =link_to '削除する', post_path, method: :delete, class: ""
