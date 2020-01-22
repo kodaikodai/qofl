@@ -16,13 +16,12 @@
           .header--btn
             - if user_signed_in?
               .grid-6
-                = link_to "ログアウト"
-                -# method: :delete
-                = link_to  "投稿する","", class: "header__bar--btn__login"
+                = link_to "ログアウト", destroy_user_session_path, method: :delete
+                = link_to  "投稿する", new_post_path, class: "header__bar--btn__login"
             - else
               .grid-6
-                = link_to "ログイン","", class: 'header__bar--btn__login'
-                = link_to "新規登録","", class: 'header__bar--btn__signin'
+                = link_to "ログイン", new_user_session_path, class: 'header__bar--btn__login'
+                = link_to "新規登録", new_user_registration_path, class: 'header__bar--btn__signin'
       = yield
       .footer
         フッター
