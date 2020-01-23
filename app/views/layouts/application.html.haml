@@ -16,7 +16,8 @@
           .header--btn
             - if user_signed_in?
               .grid-6
-                = link_to "ログアウト", destroy_user_session_path, method: :delete
+                = link_to current_user.nickname, user_path(current_user.id)
+                = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__bar--btn__login"
                 = link_to  "投稿する", new_post_path, class: "header__bar--btn__login"
             - else
               .grid-6
