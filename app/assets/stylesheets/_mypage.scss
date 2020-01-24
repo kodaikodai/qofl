@@ -1,20 +1,25 @@
-.contents-posts{
-  background-color:rgb(236, 250, 247);
-  width: 660px;
-  height: 100%;
-  margin: 0 auto;
-  &__name{
-    margin: 20px 0;
-    &__link{
-      text-decoration: none;
-      &__image{
-        background-color:wheat;
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 3px;
-        box-shadow: 0 0 10px rgba(41,41,41,0.2);
-        }
+.mypage-container{
+  background:rgb(236, 250, 247);
+  padding: 20px 0 202px 0;
+  .contents-posts{
+    background-color:rgb(236, 250, 247);
+    width: 660px;
+    height: 100%;
+    margin: 0 auto;
+    &__name{
+      margin-top: 20px;
+      &__link{
+        text-decoration: none;
+        &__image{
+          margin-top: 30px;
+          height: 400px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 3px;
+          box-shadow: 0 0 10px rgba(41,41,41,0.2);
+          }
+      }
     }
   }
 }
+
