@@ -21,8 +21,11 @@
           = form.text_area :text, placeholder: "説明" , rows: "10", class: "form__input"
           = form.submit "SEND", class: "form__btn form__input"
       .maincontents__post__comment
-    .maincontents__btn
-      .maincontents__btn__edit
-        =link_to '編集する', edit_post_path, class: ""
-      .maincontents__btn__delete
-        =link_to '削除する', post_path, method: :delete, class: ""
+      -# 以上はコメント機能-------
+
+    - if user_signed_in? && current_user.id == @post.user.id
+      .maincontents__post__btn
+        .maincontents__post__btn__edit
+          =link_to '編集する', edit_post_path, class: ""
+        .maincontents__post__btn__delete
+          =link_to '削除する', post_path, method: :delete, class: ""
