@@ -4,9 +4,10 @@
     .maincontents__post
       .maincontents__post__info
         .maincontents__post__info__name
-          testname さんの投稿
+          = link_to @post.user.nickname,user_path(@post.user.id)
+          さんの投稿
         .maincontents__post__info__time
-          2019.11.11
+          = @post.updated_at
       .maincontents__post__tiele
         = "タイトル：#{@post.title}"
       .maincontents__post__text

@@ -1,0 +1,10 @@
+.mypage-container
+  .contents-posts
+    .contents-posts__name
+      = "#{@nickname}さんの投稿一覧"
+    - @posts.each do |post|
+      =link_to post_path(post.id), class: "contents-posts__name__link" do
+        = image_tag post.image, alt:"写真", class:"contents-posts__name__link__image"
+        .contents__info
+          %apan.contents__info__title
+            =post.title
