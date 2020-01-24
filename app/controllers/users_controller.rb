@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
 
   def show
-    post = Post.find(params[:id])
-    @nickname = post.user.nickname
-    @posts = post.user.posts
+    user = User.find(params[:id])
+    @nickname = user.nickname
+    @posts = user.posts
   end
 end
