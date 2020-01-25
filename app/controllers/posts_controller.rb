@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:edit, :show]
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @posts = Post.includes(:user).page(params[:page]).per(10)
@@ -30,6 +30,10 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     post.update(post_params)
+  end
+
+  def search
+    @posts = Post.search(params[:keyword]).page(params[:page]).per(3)
   end
 
   private
