@@ -10,3 +10,5 @@
           %apan.contents__info__name
             = icon('fas', 'user',  class: "")
             = post.user.nickname
+  .pagination
+    = paginate(@posts)
