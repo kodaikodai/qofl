@@ -28,5 +28,19 @@
       
     }
   }
+  &__comments{
+    &__title{
+      padding-bottom: 10px;
+      &__box{
+        display: flex;
+        padding-bottom: 10px;
+        &__text{
+          padding-left: 20px;
+        }
+      }
+      
+    }
+
+  }
   
 }

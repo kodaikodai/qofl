@@ -29,10 +29,12 @@
         ＜コメント一覧＞
       - if @comments
         - @comments.each do |comment|
-          .maincontents__comments__title__name
-            = "#{comment.user.nickname}:"
-          .maincontents__comments__title__text
-            = comment.text
+          .maincontents__comments__title__box
+            .maincontents__comments__title__box__name
+              = link_to comment.user.nickname,user_path(comment.user.id)
+              %span :
+            .maincontents__comments__title__box__text
+              = comment.text
 
       -# 以上はコメント機能-------
 
