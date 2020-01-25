@@ -16,11 +16,26 @@
 
 
       -# 以下はコメント機能-------
+    - if current_user
       .maincontents__post__form
-        = form_with(model: @post, local: true) do |form|
-          = form.text_area :text, placeholder: "説明" , rows: "10", class: "form__input"
+        = form_with(model: [@post,@comment], local: true) do |form|
+          = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "form__input"
           = form.submit "SEND", class: "form__btn form__input"
-      .maincontents__post__comment
+    - else
+      .maincontents__post__message
+        ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+    .maincontents__comments
+      .maincontents__comments__title
+        ＜コメント一覧＞
+      - if @comments
+        - @comments.each do |comment|
+          .maincontents__comments__title__box
+            .maincontents__comments__title__box__name
+              = link_to comment.user.nickname,user_path(comment.user.id)
+              %span :
+            .maincontents__comments__title__box__text
+              = comment.text
+
       -# 以上はコメント機能-------
 
     - if user_signed_in? && current_user.id == @post.user.id
