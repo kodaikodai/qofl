@@ -1,10 +1,10 @@
 .mypage-container{
   background:rgb(236, 250, 247);
   padding: 20px 0 202px 0;
+  min-height: calc(100vh - 294px);
   .contents-posts{
     background-color:rgb(236, 250, 247);
     width: 660px;
-    height: 100%;
     margin: 0 auto;
     &__name{
       margin-top: 20px;
@@ -23,3 +23,6 @@
   }
 }
 
+.mypage-paginate{
+  padding-top: 20px;
+}

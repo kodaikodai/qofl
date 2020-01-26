@@ -1,9 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:edit, :show]
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
-    @posts = Post.includes(:user).page(params[:page]).per(10)
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(12)
   end
 
   def new
@@ -30,6 +30,10 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     post.update(post_params)
+  end
+
+  def search
+    @posts = Post.search(params[:keyword]).order("created_at DESC").page(params[:page]).per(12)
   end
 
   private
