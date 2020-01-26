@@ -5,15 +5,20 @@
         = form.text_field :keyword, placeholder: "投稿を検索する", class: "form__input"
         = form.submit "検索", class: "form__btn form__input"
   .lower
-    - @posts.reverse.each do |post|
-      =link_to post_path(post.id), class: "contents" do
-        = image_tag post.image, alt:"写真", class:"contents__image"
-        .contents__info
-          %apan.contents__info__title
-            =post.title
-          %apan.contents__info__name
-            = icon('fas', 'user',  class: "")
-            = post.user.nickname
+    - if @posts
+      .search-result
+        #{@posts.count}件見つかりました
+    .contents.clearfix
+      - @posts.each do |post|
+        .contents__content
+          =link_to post_path(post.id), class: "contents__content__link" do
+            = image_tag post.image, alt:"写真", class:"contents__content__link__image"
+            .contents__content__link__info
+              %apan.contents__content__link__info__title
+                =post.title
+              %apan.contents__content__link__info__name
+                = icon('fas', 'user',  class: "")
+                = post.user.nickname
   .pagination
     = paginate(@posts)
 

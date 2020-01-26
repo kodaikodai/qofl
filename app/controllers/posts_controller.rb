@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :move_to_index, except: [:index, :show, :search]
 
   def index
-    @posts = Post.includes(:user).page(params[:page]).per(10)
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(12)
   end
 
   def new
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
   end
 
   def search
-    @posts = Post.search(params[:keyword]).page(params[:page]).per(3)
+    @posts = Post.search(params[:keyword]).order("created_at DESC").page(params[:page]).per(12)
   end
 
   private
