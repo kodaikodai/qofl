@@ -30,13 +30,33 @@
   z-index: 1;
   height: 52px;
   &__bar{
-    width: 100%;
     padding: 0 100px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     &__title{
+      line-height: 52px;
+      font-size: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+      &__link{
+        text-decoration: none;
+        color:#3AD6B2;
+        font-weight: bold;
+      }
     }
     &--btn{
+      &__name{
+        color:#3AD6B2;
+        font-size: 20px;
+        padding-right:20px;
+        text-decoration: none;
+        line-height: 52px;
+        &:hover {
+          font-weight: bold;
+        }
+      }
       &__login{
         @include header--btn();
         &:hover{
@@ -52,8 +72,6 @@
     }
   }
 }
-
-
 
 
 

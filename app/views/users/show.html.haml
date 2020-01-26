@@ -5,8 +5,8 @@
     - @posts.each do |post|
       =link_to post_path(post.id), class: "contents-posts__name__link" do
         = image_tag post.image, alt:"写真", class:"contents-posts__name__link__image"
-        .contents__info
-          %apan.contents__info__title
+        .contents-posts__name__link__info
+          %apan.contents-posts__name__link__info__title
             =post.title
     .mypage-paginate
     = paginate(@posts)

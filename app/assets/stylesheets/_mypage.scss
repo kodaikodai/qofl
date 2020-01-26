@@ -10,6 +10,11 @@
       margin-top: 20px;
       &__link{
         text-decoration: none;
+        &__info{
+          &__title{
+            color:gray;
+          }
+        }
         &__image{
           margin-top: 30px;
           height: 400px;
@@ -17,6 +22,10 @@
           object-fit: cover;
           border-radius: 3px;
           box-shadow: 0 0 10px rgba(41,41,41,0.2);
+          &:hover {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+            transform: translateY(-0.1875em);
+          }
           }
       }
     }

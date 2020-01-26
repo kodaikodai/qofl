@@ -12,11 +12,11 @@
       .header
         .header__bar
           .header__bar__title
-            =link_to 'title', root_path, class: ""
+            =link_to 'Things That Changed Your Life', root_path, class: "header__bar__title__link"
           .header--btn
             - if user_signed_in?
               .grid-6
-                = link_to current_user.nickname, user_path(current_user.id)
+                = link_to current_user.nickname, user_path(current_user.id),class: "header__bar--btn__name"
                 = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__bar--btn__login"
                 = link_to  "投稿する", new_post_path, class: "header__bar--btn__login"
             - else

@@ -16,6 +16,7 @@ body {
     height: 600px;
     background: url(/assets/top.jpeg) center / cover;
     &__title {
+      color: #3ad6b2;
       padding-top: 80px;
       &__title1 {
         font-size: 35px;
@@ -25,11 +26,9 @@ body {
       }
     }
     &__form {
-      
       text-align: center;
       padding-top: 350px;
-      &__btn{
-
+      &__btn {
       }
     }
   }
@@ -57,15 +56,20 @@ body {
             object-fit: cover;
             border-radius: 3px;
             box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+            &:hover {
+              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+              transform: translateY(-0.1875em);
+            }
           }
           &__info {
             display: flex;
             justify-content: space-around;
             &__title {
-              text-shadow: 3px 3px 1px #999999;
+              color:gray;
+              
             }
             &__name {
-              text-shadow: 3px 3px 1px #999999;
+              color:gray;
             }
           }
         }

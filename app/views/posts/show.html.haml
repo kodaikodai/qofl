@@ -3,9 +3,8 @@
     = image_tag @post.image, alt:"写真", class:"maincontents__image"
     .maincontents__post
       .maincontents__post__info
-        .maincontents__post__info__name
-          = link_to @post.user.nickname,user_path(@post.user.id)
-          さんの投稿
+        = link_to @post.user.nickname,user_path(@post.user.id),class:"maincontents__post__info__name"
+        %span さんの投稿
         .maincontents__post__info__time
           = @post.updated_at
       .maincontents__post__tiele
@@ -31,16 +30,17 @@
         - @comments.each do |comment|
           .maincontents__comments__title__box
             .maincontents__comments__title__box__name
-              = link_to comment.user.nickname,user_path(comment.user.id)
+              = link_to comment.user.nickname,user_path(comment.user.id),class:"maincontents__comments__title__box__name__link"
               %span :
             .maincontents__comments__title__box__text
-              = comment.text
+              = simple_format(comment.text)
+      - if @comments.count == 0
+        .maincontents__comments__title__no-comment
+          ** コメントはありません **
 
       -# 以上はコメント機能-------
 
     - if user_signed_in? && current_user.id == @post.user.id
-      .maincontents__post__btn
-        .maincontents__post__btn__edit
-          =link_to '編集する', edit_post_path, class: ""
-        .maincontents__post__btn__delete
-          =link_to '削除する', post_path, method: :delete, class: ""
+      .maincontents__comments__btn
+        =link_to '編集する', edit_post_path, class: "maincontents__comments__btn__edit"
+        =link_to '削除する', post_path, method: :delete, class: "maincontents__comments__btn__delete"
