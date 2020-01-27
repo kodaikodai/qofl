@@ -65,11 +65,13 @@ body {
             display: flex;
             justify-content: space-around;
             &__title {
-              color:gray;
+              color: #3ad6b2;
+              font-weight: bold;
               
             }
             &__name {
-              color:gray;
+              color: #3ad6b2;
+              font-weight: bold;
             }
           }
         }
