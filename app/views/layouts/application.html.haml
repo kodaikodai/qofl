@@ -25,4 +25,10 @@
                 = link_to "新規登録", new_user_registration_path, class: 'header__bar--btn__signin'
       = yield
       .footer
-        フッター
+        .footer__text
+          .footer__text__menus
+            = link_to "利用規約", "",class: "footer__text__menus__menu"
+            = link_to "プライバシーポリシー", "",class: "footer__text__menus__menu"
+            = link_to "お問い合わせ", "",class: "footer__text__menus__menu"
+          .footer__text__copy
+            ©️ 2020 All Rights Reserved.Made by Kodai

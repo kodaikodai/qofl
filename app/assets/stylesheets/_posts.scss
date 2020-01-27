@@ -89,6 +89,28 @@ body {
   z-index: 2;
   position: absolute;
   bottom: 0;
+  &__text{
+    padding: 25px 0;
+    &__menus{
+      text-align: center;
+      font-size: 14px;
+      &__menu{
+        padding: 0 5px;
+        text-decoration: none;
+        color: black;
+        &:hover{
+          text-decoration: underline;
+          color: blue;
+        }
+      }
+    }
+    &__copy{
+      text-align: center;
+      font-size: 14px;
+      padding-top:5px ;
+    }
+  }
+  
 }
 
 .clearfix::after {

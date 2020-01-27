@@ -4,7 +4,8 @@
     .maincontents__post
       .maincontents__post__info
         = link_to @post.user.nickname,user_path(@post.user.id),class:"maincontents__post__info__name"
-        %span さんの投稿
+        .maincontents__post__info__name2
+          さんの投稿
         .maincontents__post__info__time
           = @post.updated_at.strftime("%Y-%m-%d %H:%M")
       .maincontents__post__tiele

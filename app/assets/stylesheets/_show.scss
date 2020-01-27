@@ -20,6 +20,15 @@
     box-sizing: border-box;
     &__info {
       &__name {
+        text-decoration: none;
+        font-weight: bold;
+        color: #3ad6b2;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &__name2{
+        display: inline;
       }
     }
     &__message {
@@ -40,8 +49,11 @@
         &__name{
           &__link{
             color: #3ad6b2;
+            text-decoration: none;
+            font-weight: bold;
             &:hover {
               font-weight: bold;
+              text-decoration: underline;
             }
           }
         }
