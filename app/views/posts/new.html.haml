@@ -7,8 +7,9 @@
           - if @post.image.url.present?
             = image_tag(@post.image.url)
           - else
-            %i.fas.fa-image
-            %i.fas.fa-file-upload.add
+            .field-icon
+              = icon('fas', 'image',  class: "field-icon__image")
+              %apan.field-icon__text 写真を選択してください
       = form.file_field :image, placeholder: "Image Url", class: "form__field", style: "display:none;", id: "file"
       = form.text_field :title, placeholder: "タイトル", class: "form__input"
       = form.text_area :text, placeholder: "説明" , rows: "10", class: "form__input"
