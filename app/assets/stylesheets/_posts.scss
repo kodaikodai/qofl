@@ -67,7 +67,6 @@ body {
             &__title {
               color: #3ad6b2;
               font-weight: bold;
-              
             }
             &__name {
               color: #3ad6b2;
@@ -81,6 +80,11 @@ body {
   .pagination {
     text-align: center;
     width: 100%;
+    padding: 5px 0;
+    color: #3ad6b2;
+    a {
+      color: #3ad6b2;
+    }
   }
 }
 
@@ -91,28 +95,27 @@ body {
   z-index: 2;
   position: absolute;
   bottom: 0;
-  &__text{
+  &__text {
     padding: 25px 0;
-    &__menus{
+    &__menus {
       text-align: center;
       font-size: 14px;
-      &__menu{
+      &__menu {
         padding: 0 5px;
         text-decoration: none;
         color: black;
-        &:hover{
+        &:hover {
           text-decoration: underline;
           color: blue;
         }
       }
     }
-    &__copy{
+    &__copy {
       text-align: center;
       font-size: 14px;
-      padding-top:5px ;
+      padding-top: 5px;
     }
   }
-  
 }
 
 .clearfix::after {
