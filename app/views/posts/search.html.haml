@@ -17,7 +17,7 @@
       - @posts.each do |post|
         .contents__content
           =link_to post_path(post.id), class: "contents__content__link" do
-            = image_tag post.image, alt:"写真", class:"contents__content__link__image"
+            = image_tag post.image.url, alt:"写真", class:"contents__content__link__image"
             .contents__content__link__info
               %apan.contents__content__link__info__title
                 = truncate(post.title, length: 10)
