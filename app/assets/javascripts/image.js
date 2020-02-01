@@ -1,10 +1,9 @@
-
 $(function(){
-  $fileField = $('#file')
+  fileField = $('#file')
   // 選択された画像を取得し表示
-  $($fileField).on('change', $fileField, function(e) {
-    file = e.target.files[0]
-    reader = new FileReader(),
+  fileField.on('change', fileField, function(e) {
+    var file = e.target.files[0]
+    var reader = new FileReader(),
     $preview = $("#img-field");
     reader.onload = (function(file) {
       return function(e) {
