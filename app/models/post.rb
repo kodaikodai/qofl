@@ -4,7 +4,7 @@ class Post < ApplicationRecord
   belongs_to :user
   has_many :comments
   mount_uploader :image, ImageUploader
-  
+
   def self.search(search)
     if search
       Post.where('title LIKE(?)',"%#{search}%")
