@@ -11,6 +11,6 @@
               = icon('fas', 'image', class: "field-icon__image")
               %apan.field-icon__text 写真を選択してください
       = form.file_field :image, class: "form__field", style: "display:none;", id: "file"
-      = form.text_field :title, placeholder: "タイトル", class: "form__input"
-      = form.text_area :text, placeholder: "説明" , rows: "10", class: "form__input"
+      = form.text_field :title, placeholder: "タイトル", class: "form__input", id: "title"
+      = form.text_area :text, placeholder: "説明" , rows: "10", class: "form__input", id: "text"
       = form.submit "SEND", class: "form__btn form__input"
