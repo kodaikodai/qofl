@@ -11,7 +11,7 @@ describe PostsController do
   describe 'GET #edit' do
     it "assigns the requested post to @post" do
       post = create(:post)
-      get :edit, params: { id: post}
+      get :edit, params: { id: post }
       expect(assigns(:post)).to eq post
     end
 
