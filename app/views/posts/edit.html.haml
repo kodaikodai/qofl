@@ -1,7 +1,7 @@
 .container
   .form
     = form_with(model: @post, local: true) do |form|
-      .form__h3 投稿する
+      .form__h3 編集する
       = form.label '写真を選択してください' do
         #img-field{onclick: "$('#file').click()"}
           - if @post.image.url.present?
