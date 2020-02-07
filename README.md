@@ -18,7 +18,7 @@
 ユーザー同士のQOL（Quality of Life）を向上させることができるようなアプリケーションを目指しています。
 
 ## URL
-https://change-life.herokuapp.com/
+https://change-life.herokuapp.com
 
 ## 主な機能
 ### ログイン機能
