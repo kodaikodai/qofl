@@ -17,10 +17,20 @@
 ユーザー同士がモノを通じて交流したり、人生が豊かになるヒントを得られたり、
 ユーザー同士のQOL（Quality of Life）を向上させることができるようなアプリケーションを目指しています。
 
+## 制作に至った経緯
+最近はミニマリストという言葉が流行ったり、昔に比べモノを所有しなくなったと言われています。
+幸せの価値観も、お金を稼ぎ多くのモノを消費する時代から、
+充実した体験や経験を味わう事により幸せの価値を感じる時代に移り変わっていると感じています。
+私もなるべく少ないものでより生活が豊かになりたいと考えているので、
+時代のニーズがあり、私自身もあったらいいなという思いから、
+モノから人生が豊かになるヒントを得られるようなこのアプリを制作いたしました。
+
 ## URL
 https://change-life.herokuapp.com<br>
 テスト用アカウント（Email:test@com  Password:testtest）
 
+機能の説明
+工夫したところ
 ## 主な機能
 ### ログイン機能
 [![Image from Gyazo](https://i.gyazo.com/7e7f690d8310f7a9b9679443f2bb0786.png)](https://gyazo.com/7e7f690d8310f7a9b9679443f2bb0786)
@@ -34,6 +44,11 @@ https://change-life.herokuapp.com<br>
 [![Image from Gyazo](https://i.gyazo.com/2f8926aac90026ec82127108238c0f20.png)](https://gyazo.com/2f8926aac90026ec82127108238c0f20)
 ### 投稿検索機能
 [![Image from Gyazo](https://i.gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49.jpg)](https://gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49)
+
+## 今後実装したい機能
+・いいね機能
+・レコメンド機能（投稿内容やいいねの履歴からユーザーにオススメの投稿を表示させたい）
+・投稿から商品を実際に購入できるような機能
 
 ## データベース設計
 <p align="center">
