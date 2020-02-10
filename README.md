@@ -31,6 +31,7 @@ https://change-life.herokuapp.com<br>
 
 ## 機能の説明と工夫したところ
 ### トップページ
+- 写真をクリックする事で投稿の詳細を表示できます。
 - 最新の投稿が左上になるようにしています。
 - ページネーション機能を実装しています。
 [![Image from Gyazo](https://i.gyazo.com/f5d95147d77805230ac2fae2f784f889.jpg)](https://gyazo.com/f5d95147d77805230ac2fae2f784f889)
@@ -38,22 +39,26 @@ https://change-life.herokuapp.com<br>
 - deviseを用いて実装しました
 [![Image from Gyazo](https://i.gyazo.com/7e7f690d8310f7a9b9679443f2bb0786.png)](https://gyazo.com/7e7f690d8310f7a9b9679443f2bb0786)
 ### 投稿機能
+- ヘッダーの投稿ボタンから新規投稿ができます。
 - ログインしているユーザーのみが投稿できるように制限しています。
 - 直感的に操作できるようにjQueryを用いて写真をファイルから直接選択しプレビュー表示するようにしています。
 - 写真投稿アプリのため、写真を選択しないと投稿できないようにバリデーションを設定しています。
 [![Image from Gyazo](https://i.gyazo.com/790589ea76ccf6981ccd377c2d9a5d71.jpg)](https://gyazo.com/790589ea76ccf6981ccd377c2d9a5d71)
 ### コメント投稿機能
+- 投稿の詳細画面からコメントが投稿できます。
 - ユーザー同士がコミュニケーションが取れるようにコメント機能を実装しました。
 - ログインしているユーザーのみコメントできるように制限しています。
 [![Image from Gyazo](https://i.gyazo.com/473de173e235133fb9a3cc36c2c67ec7.jpg)](https://gyazo.com/473de173e235133fb9a3cc36c2c67ec7)
 ### マイページ機能
-- マイページからユーザーの投稿一覧が確認できます。
+- 投稿者の名前をクリックする事でマイページに飛び、ユーザーの投稿一覧が確認できます。
 [![Image from Gyazo](https://i.gyazo.com/868b738d857aba1d1fb496989be98a86.jpg)](https://gyazo.com/868b738d857aba1d1fb496989be98a86)
 ### 編集・削除機能
+- 投稿詳細画面から編集・削除ができます。
 - 投稿者のみが編集・削除できるように制限しています。
 [![Image from Gyazo](https://i.gyazo.com/2f8926aac90026ec82127108238c0f20.png)](https://gyazo.com/2f8926aac90026ec82127108238c0f20)
 ### 投稿検索機能
-- 検索した際に、検索にヒットした件数が表示するように実装しました。
+- 検索したワードをタイトルから検索します。
+- 検索した際にヒットした件数が表示されるように実装しました。
 [![Image from Gyazo](https://i.gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49.jpg)](https://gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49)
 
 ## 今後実装したい機能
