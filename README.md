@@ -18,8 +18,8 @@
 ユーザー同士のQOL（Quality of Life）を向上させることができるようなアプリケーションを目指しています。
 
 ## URL
-https://change-life.herokuapp.com
-テスト用アカウント（Email:test@com Password:testtest）
+https://change-life.herokuapp.com<br>
+テスト用アカウント（Email:test@com  Password:testtest）
 
 ## 主な機能
 ### ログイン機能
