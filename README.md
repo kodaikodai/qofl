@@ -39,12 +39,17 @@ https://change-life.herokuapp.com<br>
 - 写真投稿アプリのため、写真を選択しないと投稿できないようにバリデーションを設定しています。
 [![Image from Gyazo](https://i.gyazo.com/790589ea76ccf6981ccd377c2d9a5d71.jpg)](https://gyazo.com/790589ea76ccf6981ccd377c2d9a5d71)
 ### コメント投稿機能
+- ユーザー同士がコミュニケーションが取れるようにコメント機能を実装しました。
+- ログインしているユーザーのみコメントできるように制限しています。
 [![Image from Gyazo](https://i.gyazo.com/473de173e235133fb9a3cc36c2c67ec7.jpg)](https://gyazo.com/473de173e235133fb9a3cc36c2c67ec7)
 ### マイページ機能
+- マイページからユーザーの投稿一覧が確認できます。
 [![Image from Gyazo](https://i.gyazo.com/868b738d857aba1d1fb496989be98a86.jpg)](https://gyazo.com/868b738d857aba1d1fb496989be98a86)
 ### 編集・削除機能
+- 投稿者のみが編集・削除できるように制限しています。
 [![Image from Gyazo](https://i.gyazo.com/2f8926aac90026ec82127108238c0f20.png)](https://gyazo.com/2f8926aac90026ec82127108238c0f20)
 ### 投稿検索機能
+- 検索した際に、検索にヒットした件数が表示するように実装しました。
 [![Image from Gyazo](https://i.gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49.jpg)](https://gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49)
 
 ## 今後実装したい機能
