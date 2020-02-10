@@ -29,12 +29,14 @@
 https://change-life.herokuapp.com<br>
 テスト用アカウント（Email:test@com  Password:testtest）
 
-機能の説明
-工夫したところ
-## 主な機能
+## 機能の説明と工夫したところ
 ### ログイン機能
+- deviseを用いて実装しました
 [![Image from Gyazo](https://i.gyazo.com/7e7f690d8310f7a9b9679443f2bb0786.png)](https://gyazo.com/7e7f690d8310f7a9b9679443f2bb0786)
 ### 投稿機能
+- ログインしているユーザーのみが投稿できるように制限しています。
+- 直感的に操作できるようにjQueryを用いて写真をファイルから直接選択しプレビュー表示するようにしています。
+- 写真投稿アプリのため、写真を選択しないと投稿できないようにバリデーションを設定しています。
 [![Image from Gyazo](https://i.gyazo.com/790589ea76ccf6981ccd377c2d9a5d71.jpg)](https://gyazo.com/790589ea76ccf6981ccd377c2d9a5d71)
 ### コメント投稿機能
 [![Image from Gyazo](https://i.gyazo.com/473de173e235133fb9a3cc36c2c67ec7.jpg)](https://gyazo.com/473de173e235133fb9a3cc36c2c67ec7)
@@ -49,6 +51,7 @@ https://change-life.herokuapp.com<br>
 ・いいね機能
 ・レコメンド機能（投稿内容やいいねの履歴からユーザーにオススメの投稿を表示させたい）
 ・投稿から商品を実際に購入できるような機能
+・レスポンシブ対応
 
 ## データベース設計
 <p align="center">
