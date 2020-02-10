@@ -30,6 +30,10 @@ https://change-life.herokuapp.com<br>
 テスト用アカウント（Email:test@com  Password:testtest）
 
 ## 機能の説明と工夫したところ
+### トップページ
+- 最新の投稿が左上になるようにしています。
+- ページネーション機能を実装しています。
+[![Image from Gyazo](https://i.gyazo.com/f5d95147d77805230ac2fae2f784f889.jpg)](https://gyazo.com/f5d95147d77805230ac2fae2f784f889)
 ### ログイン機能
 - deviseを用いて実装しました
 [![Image from Gyazo](https://i.gyazo.com/7e7f690d8310f7a9b9679443f2bb0786.png)](https://gyazo.com/7e7f690d8310f7a9b9679443f2bb0786)
