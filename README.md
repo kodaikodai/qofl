@@ -28,7 +28,7 @@
 ## URL
 https://change-life.herokuapp.com<br>
 テスト用アカウント↓↓
-- Email:test1@test.com
+- Email:test1@test.<span>com</span>
 - Password:testtest
 
 ## 機能の説明と工夫したところ
