@@ -18,7 +18,7 @@
       -# 以下はコメント機能-------
     - if current_user
       .maincontents__post__form
-        = form_with(model: [@post,@comment], local: true) do |form|
+        = form_with(model: [@post,@comment], local: true, id: "new_comment") do |form|
           = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "form__input"
           = form.submit "SEND", class: "form__btn form__input"
     - else
