@@ -48,7 +48,7 @@ https://change-life.herokuapp.com<br>
 [![Image from Gyazo](https://i.gyazo.com/790589ea76ccf6981ccd377c2d9a5d71.jpg)](https://gyazo.com/790589ea76ccf6981ccd377c2d9a5d71)
 ### コメント投稿機能
 - 投稿の詳細画面からコメントが投稿できます。
-- ユーザー同士がコミュニケーションが取れるようにコメント機能を実装しました。
+- ユーザー同士がコミュニケーションが取れるようにコメント機能を実装しています。
 - ログインしているユーザーのみコメントできるように制限しています。
 - コメントは非同期で投稿できるよう実装しています。（Ajax）
 [![Image from Gyazo](https://i.gyazo.com/473de173e235133fb9a3cc36c2c67ec7.jpg)](https://gyazo.com/473de173e235133fb9a3cc36c2c67ec7)
@@ -61,8 +61,8 @@ https://change-life.herokuapp.com<br>
 [![Image from Gyazo](https://i.gyazo.com/2f8926aac90026ec82127108238c0f20.png)](https://gyazo.com/2f8926aac90026ec82127108238c0f20)
 ### 投稿検索機能
 - 入力したワードをタイトルから検索します。
-- 検索した際にヒットした件数が表示されるように実装しました。
-- インクリメンタルサーチを実装して、投稿の検索を非同期で行えるようにしました。
+- 検索した際にヒットした件数が表示されるように実装しています。
+- インクリメンタルサーチを実装して、投稿の検索を非同期で行えるようにしています。
 [![Image from Gyazo](https://i.gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49.jpg)](https://gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49)
 
 ## 今後実装したい機能
