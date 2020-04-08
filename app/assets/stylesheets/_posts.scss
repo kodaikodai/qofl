@@ -37,6 +37,8 @@ body {
     .contents {
       min-height: calc(100vh - 696px);
       padding: 0 20px;
+      margin: 0 auto;
+      max-width: 1440px;
       &__content {
         float: left;
         margin: 30px;
