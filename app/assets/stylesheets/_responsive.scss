@@ -1,12 +1,35 @@
-@media screen and (max-width: 1077px) {
-  .main .lower .contents__content {
-    margin: 25px;
-  }
+@media screen and (max-width: 1130px) {
+  // .main .lower .contents__content {
+//     margin: 20px;
+//   }
+//   .header__bar {
+//     padding: 0 50px;
+// }
+
+.main .lower .contents__content {
+  height: 250px;
+  width: 250px;
+}
+
 }
 
 
-@media screen and (max-width: 1077px) {
-  .main .lower .contents__content {
-    margin: 25px;
-  }
+@media screen and (max-width: 768px) {
+  .header__bar {
+    padding: 0;
+}
+
+.header__bar__title__link {
+  font-size: small;
+}
+
+.header__bar--btn__login {
+  padding: 0;
+  font-size: small;
+}
+
+.header__bar--btn__name {
+  padding-right: 0;
+}
+
 }

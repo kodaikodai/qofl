@@ -35,12 +35,15 @@ body {
   .lower {
     padding: 40px 0;
     .contents {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
       min-height: calc(100vh - 696px);
       padding: 0 20px;
       margin: 0 auto;
       max-width: 1440px;
       &__content {
-        float: left;
+        display: inline-block;
         margin: 30px;
         height: 286px;
         width: 286px;
@@ -130,4 +133,12 @@ body {
   text-align: center;
   padding-bottom: 20px;
   font-weight: bold;
+}
+
+.contents__content.is-empty {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
