@@ -30,21 +30,24 @@
     padding-right: 0;
   }
 
-  .maincontents {
+  .maincontents,.mypage-container .contents-posts  {
     width: 440px;
   }
 
-  .maincontents__image {
+  .maincontents__image,.mypage-container .contents-posts__name__link__image {
     height: 264px;
   }
+
+
+
 }
 
 @media screen and (max-width: 425px) {
-  .maincontents {
+  .maincontents,.mypage-container .contents-posts  {
     width: 300px;
   }
 
-  .maincontents__image {
+  .maincontents__image,.mypage-container .contents-posts__name__link__image {
     height: 180px;
   }
 
@@ -64,4 +67,24 @@
   .grid-6 a {
     font-size: 11px;
   }
+
+  #img-field {
+    width: 300px;
+    height: 180px;
+    margin: 0 auto;
+    
+}
+
+.container .form {
+  width: 100%;
+}
+
+.field-icon__text {
+  display: none;
+}
+
+.field-icon__image {
+  line-height: 200px;
+}
+
 }
