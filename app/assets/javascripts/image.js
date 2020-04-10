@@ -35,3 +35,5 @@ $(document).on("turbolinks:load", function () {
 
   $grid.append(emptyCells);
 });
+
+
