@@ -1,27 +1,9 @@
 .container
   .maincontents
     = image_tag @post.image.url, alt:"写真", class:"maincontents__image"
-    .maincontents__image__like
+    .maincontents__image__like{id: "likes-of-#{@post.id}"}
+      = render partial: 'likes/like', locals: {post: @post}
 
-    -# いいね機能↓↓
-      - if user_signed_in?
-        -# もし現在のユーザーがいいねをすでにしていた場合↓↓
-        - if @post.like_user(current_user.id)
-          = button_to post_like_path(@post.id), method: :delete, id:"like-button", remote: true do
-            = icon('fas', 'heart',  class: "")
-            %span{id: "like-of-#{@post.id}"}
-              = @post.likes_count
-        -else
-          -# もし現在のユーザーがいいねをしていない場合↓↓
-          = button_to post_likes_path(@post), id:"like-button",remote: true do
-            = icon('far', 'heart',  class: "")
-            %span{id: "like-of-#{@post.id}"}
-              = @post.likes_count
-      - else
-        = icon('far', 'heart',  class: "")
-        %span{id: "like-of-#{@post.id}"}
-          = @post.likes_count
-      -# = render partial: "like", locals: { post: @post }
     
     .maincontents__post
       .maincontents__post__info
