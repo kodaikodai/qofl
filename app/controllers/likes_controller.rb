@@ -1,12 +1,15 @@
 class LikesController < ApplicationController
+
 #-----いいねをする------
   def create
     # 現在のユーザーがこの投稿に対していいねする↓↓
     @like = Like.create(user_id: current_user.id, post_id: params[:post_id])
-    # この投稿のいいね数を全て代入↓↓
-    @likes = Like.where(post_id: params[:post_id])
-    # この投稿の情報を全て代入する↓↓
-    @posts = Post.all
+    @like.save
+    # いいね後のpost情報を代入↓↓
+    @post = Post.find(params[:post_id])
+    # if @like.save
+    #   redirect_to post_path(id: params[:post_id])
+    # end
   end
 
 # -----いいねを解除する-----
@@ -14,9 +17,10 @@ class LikesController < ApplicationController
     # 現在のユーザーのこの投稿に対してのいいねを代入↓↓
     like = Like.find_by(user_id: current_user.id, post_id: params[:post_id])
     like.destroy
-    # この投稿に対するいいねの情報を全て代入↓↓
-    @likes = Like.where(post_id: params[:post_id])
-    # この投稿の情報を全て代入する↓↓
-    @posts = Post.all
+    # いいね削除後のpost情報を代入↓↓
+    @post = Post.find(params[:post_id])
+    # if like.destroy
+    #   redirect_to post_path(post_id: params[:post_id])
+    # end
   end
 end
