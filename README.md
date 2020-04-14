@@ -67,8 +67,6 @@ https://change-life.herokuapp.com<br>
 [![Image from Gyazo](https://i.gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49.jpg)](https://gyazo.com/e62fe4b7115528cf7d0220f0bbc95f49)
 
 ## 今後実装したい機能
-### いいね機能
-よりSNSのような使い方に近づけるように、いいね機能を実装したい
 ### レコメンド機能
 投稿内容やいいねの履歴からユーザーにオススメの投稿を表示させ利便性を向上させたい。
 ### 投稿から商品を実際に購入できるような機能
