@@ -1,6 +1,10 @@
 .container
   .maincontents
     = image_tag @post.image.url, alt:"写真", class:"maincontents__image"
+    .maincontents__image__like{id: "likes-of-#{@post.id}"}
+      = render partial: 'likes/like', locals: {post: @post}
+
+    
     .maincontents__post
       .maincontents__post__info
         = link_to @post.user.nickname,user_path(@post.user.id),class:"maincontents__post__info__name"

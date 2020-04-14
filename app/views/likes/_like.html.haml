@@ -1,0 +1,17 @@
+- if user_signed_in?
+  - if post.like_user(current_user.id)
+    -# いいねを解除↓↓
+    = button_to post_like_path(post, post_id: post.id), method: :delete, id:"like-button", remote: true do
+      = icon('fas', 'heart',  class: "")
+      %span
+        = post.likes_count
+  -else
+    -# いいねをする↓↓
+    = button_to post_likes_path(post), id:"like-button",remote: true do
+      = icon('far', 'heart',  class: "")
+      %span
+        = post.likes_count
+- else
+  = icon('far', 'heart',  class: "")
+  %span
+    = post.likes_count
