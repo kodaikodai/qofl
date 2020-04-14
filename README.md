@@ -53,6 +53,9 @@ https://change-life.herokuapp.com<br>
 - ログインしているユーザーのみコメントできるように制限しています。
 - コメントは非同期で投稿できるよう実装しています。（Ajax）
 [![Image from Gyazo](https://i.gyazo.com/473de173e235133fb9a3cc36c2c67ec7.jpg)](https://gyazo.com/473de173e235133fb9a3cc36c2c67ec7)
+### いいね機能
+- 投稿に対してAjaxを用いた「いいね」ボタンを設置しています。
+[![Image from Gyazo](https://i.gyazo.com/f866214ccdc7d40940633fe3df15989f.gif)](https://gyazo.com/f866214ccdc7d40940633fe3df15989f)
 ### マイページ機能
 - 投稿者の名前をクリックする事でマイページに飛び、ユーザーの投稿一覧が確認できます。
 [![Image from Gyazo](https://i.gyazo.com/868b738d857aba1d1fb496989be98a86.jpg)](https://gyazo.com/868b738d857aba1d1fb496989be98a86)
