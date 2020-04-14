@@ -77,36 +77,5 @@ https://change-life.herokuapp.com<br>
 
 ## データベース設計
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/57389471/73816710-a7406e80-482c-11ea-8de9-ec639c265f7c.png" width=60%>
+  <img src="https://i.gyazo.com/ab0f09db52d5ffd9a0a52bcee309038b.png" width=60%>
 </p>
-
-## usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|nickname|string|null: false|
-|email|string|null: false|
-|password|string|null: false|
-### Association
-- has_many :posts
-- has_many :comments
-
-## postsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|title|string|null: false|
-|image|text|null: false|
-|text|text||
-|user_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- has_many   :comments
-
-## commentsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|null: false|
-|post_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- belongs_to :post
